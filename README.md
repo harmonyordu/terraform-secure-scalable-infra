@@ -20,7 +20,6 @@ It follows Infrastructure as Code (IaC) principles, modularization, and DevOps a
 
 ## 📁 Project Structure
 
-> ✅ *This directory layout is production-grade and modular — keep it visible in the README to showcase your professionalism.*
 
 ```bash
 terraform-azure-secure-infra/
@@ -59,3 +58,105 @@ terraform-azure-secure-infra/
 │
 └── pipeline/
     └── terraform-ci.yml          # GitHub Actions or Azure DevOps pipeline
+
+⚙️ Tools & Technologies
+
+Terraform
+
+Azure Resource Manager (ARM)
+
+Azure Virtual Network (VNet)
+
+Azure Load Balancer / Application Gateway
+
+Azure VM Scale Set / App Service
+
+Azure Database for PostgreSQL / SQL Server
+
+Azure Storage (Blob) for backend
+
+Azure Key Vault
+
+GitHub Actions / Azure DevOps Pipelines
+
+🧩 Key Features
+
+✅ Modular and reusable Terraform code
+✅ Secure VNet architecture with NSGs and private subnets
+✅ Automated CI/CD for Terraform with approval gates
+✅ Scalable app tier using VM Scale Sets
+✅ Encrypted state and secrets via Key Vault
+✅ Multi-environment (dev/staging/prod) structure
+
+
+🧱 Deployment Instructions
+
+1️⃣ Clone the repository
+
+git clone https://github.com/<yourusername>/terraform-azure-secure-infra.git
+cd terraform-azure-secure-infra/envs/dev
+
+2️⃣ Initialize Terraform
+
+terraform init
+
+3️⃣ Validate and Plan
+
+terraform validate
+terraform plan -out=tfplan
+
+4️⃣ Apply the Plan
+
+terraform apply tfplan
+
+
+
+🔐 Security Highlights
+
+Azure Key Vault used for all sensitive variables
+
+Managed Identities for secure resource access
+
+Network Security Groups (NSGs) to restrict inbound/outbound traffic
+
+Private Endpoints for database and storage
+
+Role-Based Access Control (RBAC) enforcing least privilege
+
+
+
+🧰 CI/CD Pipeline Overview (GitHub Actions Example)
+Pipeline Stages
+
+Terraform Format & Validate – Ensure code quality
+
+Plan – Generate infrastructure plan
+
+Manual Approval (Prod) – Prevent accidental production deployment
+
+Apply Infrastructure – Execute infrastructure changes
+
+
+🧑‍💻 Author
+
+Harmony Ordu
+Cloud & DevOps Engineer
+www.linkedin.com/in/harmonyordu | https://github.com/harmonyordu
+
+
+🚀 Future Enhancements
+
+Add Azure Monitor dashboards and alerts
+
+Integrate Azure Container Apps or AKS for application workloads
+
+Include Terragrunt for layered environment management
+
+Add policy enforcement via Azure Policy or Terraform Cloud Sentinel
+
+
+📜 License
+
+This project is open-source under the MIT License
+.
+ 
