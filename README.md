@@ -30,33 +30,33 @@ terraform-azure-secure-infra/
 ├── .gitignore
 │
 ├── backend/
-│ └── main.tf # Remote backend (Azure Blob Storage)
+│   └── main.tf                   # Remote backend (Azure Blob Storage)
 │
 ├── envs/
-│ ├── dev/
-│ │ └── main.tf # Dev environment
-│ ├── staging/
-│ │ └── main.tf
-│ └── prod/
-│ └── main.tf
+│   ├── dev/
+│   │   └── main.tf               # Dev environment
+│   ├── staging/
+│   │   └── main.tf
+│   └── prod/
+│       └── main.tf
 │
 ├── modules/
-│ ├── network/
-│ │ ├── main.tf # VNet, subnets, NSGs
-│ │ ├── variables.tf
-│ │ └── outputs.tf
-│ ├── compute/
-│ │ ├── main.tf # VMSS or App Service
-│ │ ├── variables.tf
-│ │ └── outputs.tf
-│ ├── database/
-│ │ ├── main.tf # Azure SQL or PostgreSQL
-│ │ ├── variables.tf
-│ │ └── outputs.tf
-│ └── security/
-│ ├── main.tf # Key Vault, IAM, Managed Identities
-│ ├── variables.tf 
-│ └── outputs.tf
+│   ├── network/
+│   │   ├── main.tf               # VNet, subnets, NSGs
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── compute/
+│   │   ├── main.tf               # VMSS or App Service
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   ├── database/
+│   │   ├── main.tf               # Azure SQL or PostgreSQL
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   └── security/
+│       ├── main.tf               # Key Vault, IAM, Managed Identities
+│       ├── variables.tf
+│       └── outputs.tf
 │
 └── pipeline/
-└── terraform-ci.yml # GitHub Actions or Azure DevOps pipeline
+    └── terraform-ci.yml          # GitHub Actions or Azure DevOps pipeline
