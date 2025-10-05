@@ -1,5 +1,5 @@
-Secure and Scalable Azure Cloud Infrastructure with Terraform
-Overview
+🚀 Secure and Scalable Azure Cloud Infrastructure with Terraform
+🧠 Overview
 
 This project demonstrates the deployment of a secure, scalable, and automated three-tier architecture on Microsoft Azure using Terraform.
 It follows Infrastructure as Code (IaC) principles, modularization, and DevOps automation best practices.
@@ -21,6 +21,8 @@ State Management: Azure Storage + State Locking via Azure Blob backend
 Automation: CI/CD pipeline using GitHub Actions or Azure DevOps Pipelines
 
 📁 Project Structure
+
+✅ This directory layout is production-grade and modular — keep it visible in the README to showcase your professionalism.
 
 terraform-azure-secure-infra/
 │
@@ -58,72 +60,3 @@ terraform-azure-secure-infra/
 │
 └── pipeline/
 └── terraform-ci.yml # GitHub Actions or Azure DevOps pipeline
-
-⚙️ Tools & Technologies
-
-Terraform
-
-Azure Resource Manager (ARM)
-
-Azure Virtual Network (VNet)
-
-Azure Load Balancer / Application Gateway
-
-Azure VM Scale Set / App Service
-
-Azure Database for PostgreSQL / SQL Server
-
-Azure Storage (Blob) for backend
-
-Azure Key Vault
-
-GitHub Actions / Azure DevOps Pipelines
-
-🧱 Deployment Instructions
-
-1️⃣ Clone the repository
-
-git clone https://github.com/<yourusername>/terraform-azure-secure-infra.git
-cd terraform-azure-secure-infra/envs/dev
-
-2️⃣ Initialize Terraform
-
-terraform init
-
-3️⃣ Validate and Plan
-
-terraform validate
-
-terraform plan -out=tfplan
-
-4️⃣ Apply the Plan
-
-terraform apply tfplan
-
-🔐 Security Highlights
-
-Azure Key Vault used for all sensitive variables
-
-Managed Identities for secure resource access
-
-Network Security Groups (NSGs) to restrict inbound/outbound traffic
-
-Private Endpoints for database and storage
-
-Role-Based Access Control (RBAC) enforcing least privilege
-
-🧰 CI/CD Pipeline Overview (GitHub Actions Example)
-
-Terraform Format & Validate
-
-Plan & Generate tfplan Artifact
-
-Manual Approval (Prod Only)
-
-Apply Infrastructure
-
-🧑‍💻 Author
-
-Harmony Ordu
-Cloud & DevOps Engineer
-[www.linkedin.com/in/harmonyordu] | [https://github.com/harmonyordu]
