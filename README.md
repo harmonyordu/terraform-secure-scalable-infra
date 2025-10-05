@@ -93,23 +93,26 @@ GitHub Actions / Azure DevOps Pipelines
 🧱 Deployment Instructions
 
 1️⃣ Clone the repository
-
+```
 git clone https://github.com/<yourusername>/terraform-azure-secure-infra.git
 cd terraform-azure-secure-infra/envs/dev
+```
 
 2️⃣ Initialize Terraform
 
+```
 terraform init
+```
 
 3️⃣ Validate and Plan
-
+```
 terraform validate
 terraform plan -out=tfplan
-
+```
 4️⃣ Apply the Plan
-
+```
 terraform apply tfplan
-
+```
 
 
 🔐 Security Highlights
