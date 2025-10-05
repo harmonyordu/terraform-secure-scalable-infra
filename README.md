@@ -58,6 +58,7 @@ terraform-azure-secure-infra/
 │
 └── pipeline/
     └── terraform-ci.yml          # GitHub Actions or Azure DevOps pipeline
+'''
 
 ⚙️ Tools & Technologies
 
