@@ -22,41 +22,19 @@ Automation: CI/CD pipeline using GitHub Actions or Azure DevOps Pipelines
 
 📁 Project Structure
 
-✅ This directory layout is production-grade and modular — keep it visible in the README to showcase your professionalism.
-
-terraform-azure-secure-infra/
-│
-├── README.md
-├── .gitignore
-│
-├── backend/
-│   └── main.tf                   # Remote backend (Azure Blob Storage)
-│
-├── envs/
-│   ├── dev/
-│   │   └── main.tf               # Dev environment
-│   ├── staging/
-│   │   └── main.tf
-│   └── prod/
-│       └── main.tf
-│
-├── modules/
-│   ├── network/
-│   │   ├── main.tf               # VNet, subnets, NSGs
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   ├── compute/
-│   │   ├── main.tf               # VMSS or App Service
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   ├── database/
-│   │   ├── main.tf               # Azure SQL or PostgreSQL
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   └── security/
-│       ├── main.tf               # Key Vault, IAM, Managed Identities
-│       ├── variables.tf
-│       └── outputs.tf
-│
-└── pipeline/
-    └── terraform-ci.yml          # GitHub Actions or Azure DevOps pipeline
+📁 terraform-azure-secure-infra/
+ ┣ 📜 README.md
+ ┣ ⚙️ .gitignore
+ ┣ 🗂️ backend/
+ ┃ ┗ 📄 main.tf
+ ┣ 🧱 envs/
+ ┃ ┣ 🧩 dev/main.tf
+ ┃ ┣ 🧩 staging/main.tf
+ ┃ ┗ 🧩 prod/main.tf
+ ┣ 🧰 modules/
+ ┃ ┣ 🌐 network/
+ ┃ ┣ 🖥️ compute/
+ ┃ ┣ 🗃️ database/
+ ┃ ┗ 🔐 security/
+ ┗ 🚀 pipeline/
+   ┗ 🧩 terraform-ci.yml
