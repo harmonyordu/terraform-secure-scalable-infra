@@ -55,7 +55,7 @@ terraform-azure-secure-infra/
 │ │ └── outputs.tf
 │ └── security/
 │ ├── main.tf # Key Vault, IAM, Managed Identities
-│ ├── variables.tf
+│ ├── variables.tf 
 │ └── outputs.tf
 │
 └── pipeline/
