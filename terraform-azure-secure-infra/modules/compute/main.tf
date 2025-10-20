@@ -1,0 +1,1 @@
+# VMSS or App Service
